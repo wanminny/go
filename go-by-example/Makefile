@@ -14,7 +14,7 @@ ci:
 	@echo "Adding changes..."
 	@git add .
 	@echo "Committing changes..."
-	@git commit -m "$(COMMIT_MESSAGE)"
+	@git commit -m '$(COMMIT_MESSAGE)'
 	@echo "Pushing changes to origin..."
 	@git push origin $(BRANCH)
 
