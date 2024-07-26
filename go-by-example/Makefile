@@ -16,5 +16,5 @@ ci:
 	@echo "Committing changes..."
 	@git commit -m '$(COMMIT_MESSAGE)'
 	@echo "Pushing changes to origin..."
-	@git push origin $(BRANCH)
+	@git push
 
