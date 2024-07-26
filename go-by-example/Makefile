@@ -1,9 +1,6 @@
 SHELL := /bin/bash
 # 你可以定义一个变量来传递提交信息
-COMMIT_MESSAGE ?= "feature:Update by Makefile"
-
-# 你可以定义一个变量来指定分支
-BRANCH ?= master
+COMMIT_MESSAGE ?= "feature:Update by sth"
 
 .PHONY: ci
 
