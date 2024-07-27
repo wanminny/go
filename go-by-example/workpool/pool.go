@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"log"
 	"time"
 )
 
@@ -60,7 +59,8 @@ func main() {
 
 	//这个不灵活
 	for i := 0; i < numJobs; i++ {
-		log.Println("扇出的汇总内容：", <-result)
+		<-result
+		//log.Println("扇出的汇总内容：", <-result)
 
 	}
 }
