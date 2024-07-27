@@ -18,8 +18,8 @@ func ticker() {
 		for {
 			select {
 			case <-done:
-				fmt.Println("done!")
-				break LABEL // 这样可以效果等于 return
+				fmt.Println("done!") // 为了输出这句话使用了wg
+				break LABEL          // 这样可以效果等于 return
 				//return
 				//break  // break 只是针对select所以要用return
 
