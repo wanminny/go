@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"slices"
 	"sort"
@@ -29,5 +30,12 @@ func main() {
 	log.Println(slices.IsSorted(s), slices.IsSorted(intS))
 
 	log.Println(sort.IntsAreSorted(intS), sort.StringsAreSorted(s))
+
+	example := []int{1, 25, 3, 5, 4}
+	// IntSlice是类型；这个是转换不是函数！！！
+	sort.Sort(sort.Reverse(sort.IntSlice(example)))
+	fmt.Println(example)
+
+	//sort.IntSlice(intS)
 
 }
