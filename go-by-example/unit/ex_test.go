@@ -30,9 +30,9 @@ func TestIntMinTableDriven(t *testing.T) {
 		{1, 4, 1},
 		{0, 1, 0},
 		{-1, 9, -1},
-		{-2, 8, -2},
+		{-2, 8, -20},
 		{-199, -10, -199},
-		{99, 100, 990},
+		{99, 100, 99},
 	}
 
 	for _, v := range casees {
@@ -41,7 +41,12 @@ func TestIntMinTableDriven(t *testing.T) {
 		t.Run(name, func(t *testing.T) {
 			rlt := IntMin(v.a, v.b)
 			if rlt != v.want {
-				t.Errorf("wants %d but get %d", v.want, rlt)
+				//t.Errorf("wants %d but get %d", v.want, rlt)
+				t.Log("还能执行")
+				t.Fatalf("wants %d but get %d", v.want, rlt)
+				//fmt.Println("test")
+				t.Log("还能执行吗？？")
+
 			}
 		})
 	}
