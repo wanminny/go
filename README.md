@@ -1,5 +1,4 @@
-# 
-some go practice
+# some go practice
 
-## 1. go-by-example
-## 2. experiments for daily or common practise
+- [go-by-example](./go-by-example)
+- [experiments for daily or common practise](./experiments)
