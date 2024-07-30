@@ -1,6 +1,7 @@
 go 1.21.4
 
 use (
+	./experiments/0730/enc-jwt/jwt
 	experiments/0730/string-generate
 	go-by-example/atomic
 	go-by-example/unit
